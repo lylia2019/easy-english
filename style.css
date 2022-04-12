@@ -1,0 +1,994 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*BARRE DE NAVIGATION*/
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+nav {
+    overflow: hidden;
+    background-color: #eff0f7;
+    position: fixed;
+    width: 100%;
+}
+header li {
+    float: left;
+    font-size: 1.2em;
+}
+header li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+    font-weight:bold;
+    font-size: 21px;
+	padding: 10px 20px; 
+	color:rgb(15, 15, 15);
+	text-decoration:none;
+	font-family:Arial,helvita,sans-serif;
+    cursor: pointer;
+}
+header li a:hover {
+    letter-spacing: 2px;
+}
+.logo {
+    float: right;
+    width: 150px;
+    height: 125px;
+    margin-top: 10px;
+}
+.lien {
+    margin-left: 100px;
+    margin-top: 50px;
+    color: rgb(0, 74, 155);
+}
+
+h1 {
+    margin-top: 40px;    
+}
+ 
+/*PAGA D'ACCEUIL*/        
+.home {
+    padding: 150px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 21px; 
+}
+#img {
+    float: left;
+    width:500px;
+    height: 400px;
+    margin:0px;
+    margin-right: -10px;
+} 
+#text1 {
+    float: right;
+    width:500px;
+    height: 400px;
+    margin-right: -25px;
+    margin-top: -300px;
+    font-size: 17px;
+    font-family:Verdana, Geneva, sans-serif;
+    font-style: italic;
+    line-height: 2em;
+}
+#picture1 {
+    float: right;
+    width: 620px;
+    height: 380px;
+    margin-left: 60px;
+    margin-right: -570px;  
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+#text2 {
+    float: left;
+    margin-left: 30px;
+    font-style: italic;
+    line-height: 30px;
+    font-weight: bolder;
+    font-size: 17px;
+    color: red;
+    font-family: Verdana, Geneva, sans-serif;
+    margin-top: 40px;
+}
+#text3 {
+    font-size: 19px;
+    margin-top: 180px;
+    margin-bottom: 50px;
+    margin-right: 450px;  
+    margin-left: 50px;
+    font-family:  Verdana, Geneva, sans-serif;  
+    color: rgb(0, 74, 155); 
+    font-weight: bold; 
+}
+#text3-1 {
+    font-size: 17px;
+    font-family:Verdana, Geneva, sans-serif;
+    line-height: 2em;
+    width:500px;
+    height: 400px;  
+    margin-top: 50px;
+    margin-bottom: -150px;
+}
+h2 {
+    font-size: 20px;
+    font-family:  Verdana, Geneva, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    margin-left: 100px; 
+    float: left;
+}
+#h2-1 {
+    font-size: 20px;
+    font-family:  Verdana, Geneva, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    margin-left: 100px; 
+    float: left;
+    margin-top: -35px;
+}
+#picture2  {
+    float: left;
+    width: 500px;
+    height: 240px;
+    margin-top: 14px;
+    margin-right: 400px;
+    margin-left: 100px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px 4px rgba(0,0,0,0.7);   
+}
+#picture2:hover {
+    opacity: O.5;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+}
+#text4 {
+    font-size: 17px;
+    font-family: Verdana, Geneva, sans-serif;
+    margin-left: 50px;
+    margin-right: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    float: left;
+    line-height: 2em;   
+}
+/*FOOTER*/
+#footer-art {
+    background-color:  rgb(22, 100, 145);
+    margin-top: 2600px;
+    height: 200px;
+    clip-path: polygon(0% 5%, 15% 0%, 100% 10%, 100% 100%, 0% 100%);
+}
+footer {
+    background-color: rgb(142, 195, 226);
+    line-height: 24px;
+    color: var(--text)
+}
+#footer-content {
+    max-width: 1080px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 21px;
+}
+#text-footer {
+    font-family: Verdana, Geneva, sans-serif; 
+    margin-top: 80px;
+    color: seashell;
+    font-size: 16px;
+}
+ 
+/* FENETRE POP-UP*/
+.pop-up {
+    position : fixed;
+    right: 1rem;
+    bottom: 2rem;
+    height: 250px;
+    width: 420px;
+    text-align: center;
+    background: linear-gradient(90deg, #30587A, rgb(36, 113, 180));
+    border-radius: 76% 24% 90% 10% / 20% 85% 15% 80%;
+    box-shadow: 0 5px 10px black;
+    opacity: 0;
+    transform: translateX(400px);
+    transition: 1s ease-out;
+}
+.pop-up-container {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+}
+.pop-up-container h3 {
+    color: white;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+.button-container input {
+    border: 1px solid #333;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    box-shadow: 1px 2px 0 black;
+    outline: none;
+    font-size: 1.2rem;
+    transition: .5s;
+}
+.button-container input:focus {
+    background: rgb(211, 242, 251);
+}
+.button-container button {
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: 1px solid #333;
+    outline: none;
+    cursor: pointer;
+    background: white;
+    box-shadow: 1px 2px 0 black;
+    transition: 0.3s;
+}
+.button-container button:hover {
+    background: rgb(211, 242, 251);
+    transform: translateX(-1px);
+}
+.button-container button:active {
+    transform: scale(0.96);
+}
+#close {
+    position: absolute;
+    left: 2rem;
+    top: .7rem;
+    font-size: 1.7rem;
+    color: white;
+    text-shadow: 2px 2px 0px #333;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#close:hover {
+    color: rgb(211, 242, 251);
+    transform: translateX(-1px);
+}
+#close:active {
+    transform: scale(1.5);
+}
+/*PAGE DES COURS*/
+#first {
+    font-size: 18px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.first {
+    font-size: 17px;
+    font-family: Verdana, Geneva, sans-serif;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-style: italic;  
+    line-height: 2em;  
+}
+#first1 {
+    font-weight: bold;
+}
+/*MENU DEROULANT*/
+#submenu li {
+    width: 500px;
+    text-decoration: none;
+    margin-left: 70px;
+    list-style: none;
+    line-height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 21px;
+    color: rgb(36, 206, 248);
+    text-align: center;
+    border: 2px solid rgb(78, 79, 83);
+    border-left: 2px solid rgb(47, 45, 51);
+    border-width: 1px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.7);
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+#submenu li a {
+    color: rgb(0, 74, 155);
+    font-weight: bold ;
+}
+#submenu li:hover {
+    letter-spacing: 1px;
+}
+#submenu1 li a {
+    color: rgb(0, 74, 155);
+    text-decoration: none;
+}
+#submenu1 li:hover {
+    text-decoration: underline;
+    background-color: white;
+}
+#submenu1  {
+    display:none;
+    position: absolute;
+    margin-left: 430px;
+    cursor: pointer;
+    margin-top: -55px;
+}
+#submenu li:hover #submenu1 {
+    display: block;
+    line-height: 250px;
+}
+#Cours {
+    padding-top: 150px;
+}
+#text-débutant, #text-Intermédiaire, #text-avancé {
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 80px;
+    line-height: 20px;
+}
+#h3 {
+    margin-left: 70px;
+    color:rgb(25, 101, 189);
+    font-size: 21px;
+}
+#doyou {
+    width: 700px;
+    height: 400px;
+    margin-top: -40px;
+    float:right;  
+    padding-top: 180px;   
+}
+#footer1 {
+    margin-top: 80px;
+    background-color: rgb(22, 100, 145);
+    height: 200px;
+    clip-path: polygon(0% 5%, 15% 0%, 100% 10%, 100% 100%, 0% 100%);
+}
+/*PAGE COURS NIVEAU INTERMEDIAIRE*/
+#cours-inter {
+    width: 450px;
+    height: 300px;
+    margin-top: 50px;
+    float: right;
+    padding-top: 100px;
+}
+/*PAGE COURS NIVEAU AVANCE*/
+#Avancé {
+    padding-top: 150px;
+}
+#cours-adv {
+    width: 450px;
+    height: 300px;
+    float: right;
+}
+/*PAGE VERBES IRREGELIER*/
+#verbes, h4 {
+    word-spacing: 30px;
+    white-space: pre-line ;
+    line-height: 40px;
+    margin-left: 100px;  
+    padding-top: 150px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#verbes {
+    margin-top: -220px;
+}
+/*PAGES GRAMMAR IN USE, VOCABULARY IN USE*/
+#grammar-use, #vocabulary-use {
+    max-width:100%;
+    height:auto;  
+    margin-top: 200px;
+    margin-left: 120px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px 4px rgba(0,0,0,0.7);
+}
+#vocabulary-use:hover {
+    opacity: O.5;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+}
+#grammar-use:hover {
+    opacity: O.5;
+    transform: scale(1.05);
+    transition: 0.6s ease-in-out;
+}
+/*PAGE GRAMMAIRE AVANCE*/
+#gra-avan {
+    white-space: pre-line;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 80px;
+    line-height: 25px; 
+}
+.grammaire-avance {
+    padding-top: 150px;
+}
+#condition {
+    font-size: 18px;
+    font-weight: bold;
+    color:  rgb(22, 100, 145);
+    margin-bottom: 80px;
+    text-decoration: underline;
+    margin-top: 100px;
+}
+#if {
+    width: 350px;
+    height: 200px;
+    float: right;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px 4px rgba(0,0,0,0.7);
+}
+#a-2 {
+    float: right;
+    display: inline;
+    margin-right: 450px;
+    margin-top: -30px;
+    color: rgb(16, 116, 46);
+}
+#a-1 {
+    float: left;
+    display: inline; 
+    color: red;    
+}
+#condi {
+    margin-left: 80px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+#a-3 {
+    float: left;
+    display: inline; 
+    color: red; 
+    margin-top: 20px;    
+}
+#a-5 {
+    float: right;
+    display: inline;
+    margin-right: 80px;
+    margin-top: -320px;
+    color: rgb(15, 145, 54);
+}
+#a-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(22, 100, 145);
+    margin-top: -30px;
+    margin-right: 300px;
+}
+#a-6 {
+    float: left;
+    display: inline; 
+    color: red;
+    margin-top: 130px;
+    margin-left: -200px;
+}
+#a-7 {
+    float: right;
+    display: inline;
+    color: rgb(19, 85, 39);
+    margin-right: 200px;
+    margin-top: 60px;
+    
+}
+#condition1 {
+    margin-right: -250px;
+    font-size: 18px;
+    font-weight: bold;
+    color:  rgb(22, 100, 145);
+    text-decoration: underline;
+}
+#debutants {
+    margin-right: -250px;
+    font-size: 18px;
+    font-weight: bold;
+    color:  rgb(22, 100, 145);
+    text-decoration: underline;
+    margin-left: 80px;     
+}
+/*PAGE GRAMMAIRE DEBUTANTS*/
+#a-11 {
+    float: left;
+    display: inline; 
+    color: red; 
+    margin-top: -55px;
+}
+#a-33 {
+    float: right;
+    display: inline;
+    margin-right: 350px;
+    margin-top: -370px;
+    color: rgb(22, 100, 145);
+}
+#a-22 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(9, 80, 30);
+    margin-top: -80px;
+    margin-right: 700px;
+}
+#gra-debut {
+    white-space: pre-line;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 80px;
+    line-height: 25px; 
+}
+.grammaire-debutants {
+    padding-top: 150px;
+}
+#a-44 {
+    float: left;
+    display: inline; 
+    margin-top: -55px;          
+}
+#a-55 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
+    margin-right: 700px;     
+}
+#a-66 {
+    float: right;
+    display: inline;
+    margin-right: 350px;
+    margin-top: -150px;     
+}
+#a-12 {
+    white-space: pre-line;
+    font-weight: bold;
+}
+#a-13 {
+    white-space: pre-line;
+}
+#a-14 {
+    white-space: pre-line;
+    float: left;
+    display: inline;
+}
+#a-15 {
+    white-space: pre-line;
+    float: right;
+    display: inline;
+    margin-right: 400px;
+    margin-top: -25px;
+}
+#a-16 {
+    white-space: pre-line;
+    float: left;
+    display: inline;
+}
+#a-17 {
+    
+    float: right;
+    display: inline;
+    margin-right: 150px;
+    margin-top: -25px;
+}
+#font {
+    font-weight: bold;
+}
+/*PAGE GRAMMAIRE INTERMEDIAIRE*/
+#intermediaire {
+    margin-right: -250px;
+    font-size: 18px;
+    font-weight: bold;
+    color:  rgb(22, 100, 145);
+    text-decoration: underline;
+    margin-left: 80px; 
+}
+.h3h {
+    padding-top: 200px;
+}
+#gra-inter {
+    white-space: pre-line;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 80px;
+    line-height: 25px; 
+}
+.grammaire-intermediaire {
+    padding-top: 150px;
+}
+#b-1 {
+    color: royalblue;
+}
+#p-1 {
+    white-space: pre-line;
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+}
+/*PAGE VOCABULAIRE AVANCE*/
+#vocabulaire-avancés {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: white;
+    white-space: pre-line;
+    padding-top: 150px;
+}
+#vocabulaire-avancés section {
+    width: 800px;
+}
+#vocabulaire-avancés section details {
+    position: relative;
+}
+#vocabulaire-avancés section details summary {
+    position: relative;
+    padding: 18px;
+    background: rgb(22, 100, 145);
+    color: azure;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
+}
+#vocabulaire-avancés section details summary::after {
+    content: '+';
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    transition: .2s linear;
+    font-size: 22px;
+    color: azure;
+}
+#vocabulaire-avancés section details[open] summary::after {
+    transform: rotate(135deg);
+}
+/*PAGE VOCABULAIRE DEBUTANTS*/
+#vocabulaire-debutant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: white;
+    white-space: pre-line;
+    padding-top: 150px;
+}
+#vocabulaire-debutant section {
+    width: 800px;
+}
+#vocabulaire-debutant section details {
+    position: relative;
+}
+#vocabulaire-debutant section details summary {
+    position: relative;
+    padding: 18px;
+    background: rgb(22, 100, 145);
+    color: azure;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
+}
+#vocabulaire-debutant section details summary::after {
+    content: '+';
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    transition: .2s linear;
+    font-size: 22px;
+    color: azure;
+}
+#vocabulaire-debutant section details[open] summary::after {
+    transform: rotate(135deg);
+}
+/*PAGE CONJUGAISON*/
+#conjugaison-anglais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: white;
+    white-space: pre-line;
+}
+#conjugaison-anglais section {
+    width: 800px;
+    margin-top: 200px;
+
+}
+#conjugaison-anglais section details {
+    position: relative;
+}
+#conjugaison-anglais section details summary {
+    position: relative;
+    padding: 18px;
+    background: rgb(22, 100, 145);
+    color: azure;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
+}
+#conjugaison-anglais section details summary::after {
+    content: '+';
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    transition: .2s linear;
+    font-size: 22px;
+    color: azure;
+}
+#conjugaison-anglais section details[open] summary::after {
+    transform: rotate(135deg);
+}
+/*PAGE PHONETIQUE*/
+#phonetique-anglaise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: white;
+    white-space: pre-line;
+    padding-top: 150px;
+}
+#phonetique-anglaise section {
+    width: 800px;
+}
+#phonetique-anglaise section details {
+    position: relative;
+}
+#phonetique-anglaise section details summary {
+    position: relative;
+    padding: 18px;
+    background: rgb(22, 100, 145);
+    color: azure;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
+}
+#phonetique-anglaise section details summary::after {
+    content: '+';
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    transition: .2s linear;
+    font-size: 22px;
+    color: azure;
+}
+#phonetique-anglaise section details[open] summary::after {
+    transform: rotate(135deg);
+}
+/*PAGE QUIZ*/
+#navi-1 {
+    position: relative;
+}
+.second {
+    color: rgb(0, 74, 155); 
+    margin-left: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, sans-serif;
+    text-decoration: underline;
+    margin-top: -100px;
+}
+#second {
+    font-size: 17px;
+    font-family: Verdana, Geneva, sans-serif;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-style: italic;  
+    line-height: 2em;  
+}
+#Quiz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: white;
+    white-space: pre-line;
+    padding-top: 150px;
+}
+#Quiz section {
+    width: 800px;
+}
+#Quiz section details {
+    position: relative;
+}
+#Quiz section details summary {
+    position: relative;
+    padding: 18px;
+    background: rgb(22, 100, 145);
+    color: azure;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    font-weight: bold;
+    list-style: none;
+}
+h5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+}
+
+#p-1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+/*BOUTON CORRECTION QUIZ*/
+.btn-quiz {
+     width: 90px;
+     height: 40px;
+     margin-top: 50px;
+     background-color: rgb(127, 172, 255);
+     border: 0em;
+}
+#pp11 {
+    display: none; 
+}
+/*.btn-quiz :hover .p-p11{
+    display: block;
+} 
+
+
+/*MENU DEROULANT-QUIZ*/
+#Quiz section details summary::after {
+    content: '+';
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    transition: .2s linear;
+    font-size: 22px;
+    color: azure;
+}
+#Quiz section details[open] summary::after {
+    transform: rotate(135deg);
+}
+/*PAGE CONTACT,AUTRE*/
+#navi {
+    margin-top: 0px;
+    position: relative;
+} 
+#form-text1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 21px;
+    margin-top: 40px;
+    margin-left: 280px;
+}
+#form-text2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    margin-left: 280px;
+}
+.wrapper {
+    width: 700px; 
+    height: 500px;
+    background: rgb(228, 217, 217);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    padding: auto;
+    margin-top: 60px;
+}
+.wrapper .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #686060;
+}
+.wrapper .form {
+    width: 100%;
+}
+.wrapper .form .input_field {
+    margin-bottom: 15px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.wrapper .form .input_field label {
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.wrapper .form .input_field .input,
+.wrapper .form .input_field .textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    margin-right: 20px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+.wrapper .form .input_field .textarea {
+    resize: none;
+    height: 125px;
+}
+.wrapper .form .input_field .select {
+    position: relative;
+    width: 100%;
+    height: 37px;
+} 
+.wrapper .form .input_field .select:before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+}
+.wrapper .form .input_field .input:focus,
+.wrapper .form .input_field .textarea:focus,
+.wrapper .form .input_field select:focus {
+    border: 1px solid #d5dbd9;
+}
+.wrapper .form .input_field .btn {
+    width: 75%;
+    padding: 8px 10px;
+    font-size: 15px;
+    margin-left: 150px;
+    border: 0;
+    background: #686060;
+    color: #f1eded;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+.wrapper .form .input_field:last-child {
+    margin-bottom: 0;
+}
+.wrapper .form .input_field .btn:hover {
+    background: #c06c6c;
+    text-transform: uppercase;
+}
+/*PAGE FORM-THANKS*/
+#h1-form {
+    color: rgb(22, 100, 145);
+    text-align: center;
+    font-size: 33px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 3em;
+    text-decoration: underline;
+}
+#p-form {
+    font-size: 30px;
+    color: rgb(22, 100, 145);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#p1-form {
+    font-size: 48px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #c06c6c;
+    text-align: center;
+    line-height: 6em;
+
+}
+
+ 
+
+
+
+ 
+

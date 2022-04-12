@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+      
+</head>
+<header>
+     
+      
+     
+          <!--debut de la bar de navigation-->
+          <nav id="navi">
+            <ul>
+                 
+                <li><img class="logo" src="image/logo.png" alt="logo"></li>
+                <li><a class="lien" href="index.html">Home</a></li>
+                <li><a class="lien" href="cours.html">Cours</a></li>
+                <li><a class="lien" href="quiz.html">Quiz</a></li>
+                <li><a class="lien" href="autre.html">Autre</a></li>
+                <li><a class="lien" href="https://www.larousse.fr/dictionnaires/anglais-francais">Dictionnaire</a></li>
+             </ul>
+         <nav>
+        <!--fin de la ber de navigation-->
+  </header>
+<body>
+    
+
+      <!--debut de la section Autre-->
+      <p id="form-text1">Une questions? un avis?</p>
+        <p id="form-text2">Contactez-nous</p>
+       
+       <div class="wrapper"> 
+           <div class="title">
+            Laisser un commentaire 
+           </div>
+           <form action = "index.php"  method = "POST" class = "form">
+               <div class="input_field">
+                   <label>First name</label>
+                   <input type="text" name="user_firstname" class="input">
+                </div>
+                <div class="input_field">
+                    <label>Last name</label>
+                    <input type="text" name="user_lastname" class="input">
+                 </div>
+                 <div class="input_field">
+                    <label>Email Adress</label>
+                    <input type="email" name="user_email" class="input">
+                 </div>
+                 
+                 <div class="input_field">
+                    <label>Country</label>
+                    <input type="text" name="user_country" class="input">
+                 </div>
+                 <div class="input_field">
+                    <label>Commentaire</label>
+                     <textarea name="user_message" class="textarea"></textarea>
+                 </div>
+                <div class="input_field">
+                    <input type="submit" name="submit" value="Register" class="btn">
+                </div>
+            </form>
+        </div>
+    
+    <!--fin de la section Autre-->
+</body>    
+  <!--debut de footer-->
+<footer>
+  <div id="footer1">
+       <div id="footer-content">
+           <p id="text-footer">Tous droits réservés - 2021 - Easy English</p>
+
+
+       </div>
+
+
+
+   </div> 
+
+</footer>
+<!--fin de footer-->
+
+    
+</body>
+</html>
